@@ -46,7 +46,7 @@ services:
     links:
       - mysql
 
-  archive:
+  vacations:
     image: soa_hrsystem/vacations
     labels:
       - "traefik.port=8080"
