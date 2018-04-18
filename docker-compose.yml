@@ -1,0 +1,39 @@
+version: '3'
+services:
+  traefik:
+    image: traefik
+    command: -c /dev/null --web --docker
+    labels:
+      - "traefik.enable=false"
+    ports:
+      - "81:80"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  app:
+    image: finki_soa/hrsystem
+    labels:
+      - "traefik.port=8080"
+      - "traefik.backend=app"
+      - "traefik.frontend.rule=PathPrefixStrip:/app"
+    depends_on:
+      - traefik
+      - mysql
+    links:
+      - mysql
+
+  mysql:
+    image: mysql
+    environment:
+      - MYSQL_USER=dbuser
+      - MYSQL_PASSWORD=dbp4ss
+      - MYSQL_DATABASE=demo
+      - MYSQL_ROOT_PASSWORD=blabla
+    labels:
+      - "traefik=enable=false"
+    volumes:
+       - mysql-volume:/var/lib/mysql
+
+volumes:
+  mysql-volume: {}
