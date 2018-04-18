@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abdc93ee-bb27-4d04-8083-c2accbb6282c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eureka/pom.xml" afterPath="$PROJECT_DIR$/eureka/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/src/main/resources/bootstrap.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/devices/src/main/resources/bootstrap.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archive/pom.xml" afterPath="$PROJECT_DIR$/archive/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archive/src/main/java/com/soa/hrSystem/archive/ArchiveApplication.java" afterPath="$PROJECT_DIR$/archive/src/main/java/com/soa/hrSystem/archive/ArchiveApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archive/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/archive/src/main/resources/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devices/pom.xml" afterPath="$PROJECT_DIR$/devices/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devices/src/main/java/com/soa/hrSystem/devices/DevicesApplication.java" afterPath="$PROJECT_DIR$/devices/src/main/java/com/soa/hrSystem/devices/DevicesApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devices/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/devices/src/main/resources/application.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +23,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eureka/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1093">
-              <caret line="74" column="21" lean-forward="false" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+            <state relative-caret-position="211">
+              <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -50,8 +57,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="976" />
+    <option name="x" value="985" />
+    <option name="width" value="943" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -110,7 +117,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/eureka" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/archive" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -217,12 +224,12 @@
       <option name="presentableId" value="Default" />
       <updated>1524068155713</updated>
       <workItem from="1524068157098" duration="1270000" />
-      <workItem from="1524070249414" duration="464000" />
+      <workItem from="1524070249414" duration="1206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1734000" />
+    <option name="totallyTimeSpent" value="2476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -332,8 +339,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1093">
-          <caret line="74" column="21" lean-forward="false" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+        <state relative-caret-position="211">
+          <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
           <folding />
         </state>
       </provider>

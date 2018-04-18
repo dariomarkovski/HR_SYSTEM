@@ -30,3 +30,19 @@ spring.jpa:
   hibernate:
     dialect: org.hibernate.dialect.MySQLInnoDBDialect
     ddl-auto: update
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:8761/eureka/
+    healthcheck:
+      enabled: false
+  appInfo:
+    replicate:
+      interval: 3
+    initial:
+      replicate:
+        time: 3
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
