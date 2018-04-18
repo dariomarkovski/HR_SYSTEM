@@ -11,15 +11,38 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
-  app:
+  eureka:
+      image: soa_hrsystem/eureka
+      labels:
+        - "traefik.port=8761"
+        - "traefik.backend=eureka"
+        - "traefik.frontend.rule=PathPrefixStrip:/eureka"
+      depends_on:
+        - traefik
+
+  devices:
     image: soa_hrsystem/devices
     labels:
       - "traefik.port=8080"
-      - "traefik.backend=app"
-      - "traefik.frontend.rule=PathPrefixStrip:/app"
+      - "traefik.backend=devices"
+      - "traefik.frontend.rule=PathPrefixStrip:/devices"
     depends_on:
       - traefik
       - mysql
+      - eureka
+    links:
+      - mysql
+
+  archive:
+    image: soa_hrsystem/archive
+    labels:
+      - "traefik.port=8080"
+      - "traefik.backend=archive"
+      - "traefik.frontend.rule=PathPrefixStrip:/archive"
+    depends_on:
+      - traefik
+      - mysql
+      - eureka
     links:
       - mysql
 
