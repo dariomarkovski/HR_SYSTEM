@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 echo "building archive image"
 cd archive
