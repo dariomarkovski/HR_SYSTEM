@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abdc93ee-bb27-4d04-8083-c2accbb6282c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="$PROJECT_DIR$/docker-compose.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eureka/src/main/docker/Dockerfile" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,6 +27,7 @@
       <list>
         <option value="$PROJECT_DIR$/eureka/src/main/java/com/hrSystem/eureka/EurekaApplication.java" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/eureka/src/main/docker/Dockerfile" />
       </list>
     </option>
   </component>
@@ -63,6 +64,24 @@
             <path>
               <item name="HRSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="HRSystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HRSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HRSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HRSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HRSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HRSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HRSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -186,12 +205,12 @@
       <option name="presentableId" value="Default" />
       <updated>1524068155713</updated>
       <workItem from="1524068157098" duration="1270000" />
-      <workItem from="1524070249414" duration="133000" />
+      <workItem from="1524070249414" duration="311000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1403000" />
+    <option name="totallyTimeSpent" value="1581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -266,14 +285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eureka/src/main/java/com/hrSystem/eureka/EurekaApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -294,6 +305,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka/src/main/docker/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="129" lean-forward="false" selection-start-line="5" selection-start-column="129" selection-end-line="5" selection-end-column="129" />
           <folding />
         </state>
       </provider>
