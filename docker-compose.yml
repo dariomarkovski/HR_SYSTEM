@@ -46,6 +46,19 @@ services:
     links:
       - mysql
 
+  archive:
+    image: soa_hrsystem/vacations
+    labels:
+      - "traefik.port=8080"
+      - "traefik.backend=vacations"
+      - "traefik.frontend.rule=PathPrefixStrip:/vacations"
+    depends_on:
+      - traefik
+      - mysql
+      - eureka
+    links:
+      - mysql
+
   mysql:
     image: mysql
     environment:
