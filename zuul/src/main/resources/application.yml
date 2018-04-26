@@ -1,0 +1,49 @@
+---
+spring:
+  profiles: default
+
+---
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:sampletest;MODE=MySQL
+
+---
+spring:
+  profiles: test
+
+spring.jpa:
+  hibernate:
+    ddl-auto: create-drop
+
+---
+spring:
+  profiles: local
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:8761/eureka/
+    healthcheck:
+      enabled: false
+  appInfo:
+    replicate:
+      interval: 3
+    initial:
+      replicate:
+        time: 3
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    archive: /archive/**
+    devices: /devices/**
+    vacations: /vacations/**
+    eureka: /eureka/**
+
+management:
+  security:
+    enabled: false

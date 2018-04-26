@@ -6,7 +6,7 @@ services:
     labels:
       - "traefik.enable=false"
     ports:
-      - "81:80"
+      - "80:80"
       - "8080:8080"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -20,12 +20,20 @@ services:
       depends_on:
         - traefik
 
+  zuul:
+    image: soa_hrsystem/zuul
+    labels:
+      - "traefik.port=8080"
+      - "traefik.backend=zuul"
+      - "traefik.frontend.rule=PathPrefixStrip:/zuul"
+    depends_on:
+      - traefik
+      - eureka
+
   devices:
     image: soa_hrsystem/devices
     labels:
       - "traefik.port=8080"
-      - "traefik.backend=devices"
-      - "traefik.frontend.rule=PathPrefixStrip:/devices"
     depends_on:
       - traefik
       - mysql
@@ -37,8 +45,6 @@ services:
     image: soa_hrsystem/archive
     labels:
       - "traefik.port=8080"
-      - "traefik.backend=archive"
-      - "traefik.frontend.rule=PathPrefixStrip:/archive"
     depends_on:
       - traefik
       - mysql
@@ -50,8 +56,6 @@ services:
     image: soa_hrsystem/vacations
     labels:
       - "traefik.port=8080"
-      - "traefik.backend=vacations"
-      - "traefik.frontend.rule=PathPrefixStrip:/vacations"
     depends_on:
       - traefik
       - mysql

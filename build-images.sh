@@ -20,4 +20,9 @@ cd eureka
 mvn package docker:build
 cd ..
 
+echo "building zuul image"
+cd zuul
+mvn package docker:build
+cd ..
+
 echo "building images finished"
