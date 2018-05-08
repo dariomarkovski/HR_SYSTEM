@@ -30,10 +30,19 @@ services:
       - traefik
       - eureka
 
+  gateway:
+    image: soa_hrsystem/gateway
+    labels:
+      - "traefik.enable=false"
+    depends_on:
+      - traefik
+      - eureka
+      - zuul
+
   devices:
     image: soa_hrsystem/devices
     labels:
-      - "traefik.port=8080"
+      - "traefik.enable=false"
     depends_on:
       - traefik
       - mysql
@@ -44,7 +53,7 @@ services:
   archive:
     image: soa_hrsystem/archive
     labels:
-      - "traefik.port=8080"
+      - "traefik.enable=false"
     depends_on:
       - traefik
       - mysql
@@ -55,7 +64,7 @@ services:
   vacations:
     image: soa_hrsystem/vacations
     labels:
-      - "traefik.port=8080"
+      - "traefik.enable=false"
     depends_on:
       - traefik
       - mysql

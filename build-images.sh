@@ -25,4 +25,9 @@ cd zuul
 mvn package docker:build
 cd ..
 
+echo "building gateway image"
+cd gateway
+mvn package docker:build
+cd ..
+
 echo "building images finished"
