@@ -30,4 +30,9 @@ cd gateway
 mvn package docker:build
 cd ..
 
+echo "building login image"
+cd login
+mvn package docker:build
+cd ..
+
 echo "building images finished"
