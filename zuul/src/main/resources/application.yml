@@ -41,8 +41,8 @@ zuul:
   routes:
     gateway: /gateway/**
     login:
-      path: /login/**
-      sensitive-headers:
+          path: /login/**
+          sensitive-headers:
 
 management:
   security:

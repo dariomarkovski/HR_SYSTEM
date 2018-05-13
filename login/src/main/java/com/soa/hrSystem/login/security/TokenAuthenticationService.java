@@ -35,7 +35,6 @@ public class TokenAuthenticationService {
                     .parseClaimsJws(token.replace(TOKEN_PREFIX, ""))
                     .getBody()
                     .getSubject();
-            String endpoint = httpServletRequest.getRequestURI();
             return username != null ? new UsernamePasswordAuthenticationToken(username, null, emptyList()) : null;
         }
         return null;
